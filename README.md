@@ -1,7 +1,7 @@
 # ia
 ia
 import cv2
-
+#olá camila 
 arqCasc = 'haarcascade_frontalface_default.xml'
 faceCascade = cv2.CascadeClassifier(arqCasc)
 classificador = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -10,7 +10,7 @@ webcam = cv2.VideoCapture(0)  # instancia o uso da webcam
 
 img = cv2.imread('pessoas2.png')
 imc = cv2.cvtColor(img, cv2.COLOR_RGB2GRAY)
-
+#imagem para contornar
 
 facesIdentificadas = classificador.detectMultiScale (img, scaleFactor=1.1,
                                                      minNeighbors=8,
